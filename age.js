@@ -1,4 +1,4 @@
-function getStartDateAndConvertToMilliseconds() {
+function startDatetoMilliseconds() {
   let startDateMilliseconds = Date.parse(
     prompt("Enter a date in the format: yyyy-mm-dd")
   );
@@ -11,7 +11,7 @@ function getStartDateAndConvertToMilliseconds() {
 }
 
 function timeSinceADate() {
-  const startDateMilliseconds = getStartDateAndConvertToMilliseconds();
+  const startDateMilliseconds = startDatetoMilliseconds();
 
   const currentDateMilliseconds = Date.now();
   const timeSinceStartDate = currentDateMilliseconds - startDateMilliseconds;
